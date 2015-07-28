@@ -23,12 +23,14 @@ At the moment, the following tests have been implemented:
  * Must not use mode `777` in `file` resources
  * Should not pin packages to specific version
  * Must not store plaintext passwords in the manifest
- * Should use range markers (\A,\z) in regular expressions
+ * Must not use password variables in exec
+ * Should use range markers (\A,\z,^,$) in regular expressions
  * Must not use class or defined\_type parameters in `exec`
- * Must use `tidy`with `age` and/or `size` parameter
+ * Should not use `tidy`with `age` and/or `size` parameter
  * Should not use `tidy` with `match` equals to `*`
  * Should not use `tidy` with `recurse` enabled
- * Should not create non root user with id 0
+ * Must not create non root user with id 0
+ * Should not disable services (example: mysql, puppetmaster)
 
 ### puppetlabs-apache module
 
@@ -41,8 +43,10 @@ At the moment, the following tests have been implemented:
 
 ### puppetlabs-firewall module
 
- * Must not use firewall rules with source and destination equals `any`
+ * Must not use firewall allow rules with source and destination equals `any`
+ * Should not use firewall deny rules with source and destination equals `any` (possible deny of service)
  * Must use ips or subnets in source or destination (no dns)
+ * Should not block puppetmaster port
 
 ### saz/ssh module
 
