@@ -1,7 +1,7 @@
 Gem::Specification.new do |spec|
   spec.name        = 'puppet-lint-security-plugins'
   spec.version     = '0.1.6'
-  spec.homepage    = 'https://floek.net'
+  spec.homepage    = 'https://github.com/floek/puppet-lint-security-plugins'
   spec.license     = 'MIT'
   spec.author      = 'Florian Freund'
   spec.email       = 'mail@floek.net'
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.test_files  = Dir['spec/**/*']
   spec.summary     = 'A puppet-lint plugin to check security issues.'
   spec.description = <<-EOF
-    Checks pupper manifests for security related problems.
+    Checks puppet manifests for security related problems.
   EOF
 
   spec.add_dependency             'puppet-lint', '~> 1.0'
