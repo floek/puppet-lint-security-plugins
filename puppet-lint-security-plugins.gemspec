@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name        = 'puppet-lint-security-plugins'
-  spec.version     = '0.1.6'
+  spec.version     = '0.1.7'
   spec.homepage    = 'https://github.com/floek/puppet-lint-security-plugins'
   spec.license     = 'MIT'
   spec.author      = 'Florian Freund'
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   EOF
 
   spec.add_dependency             'puppet-lint', '~> 1.0'
-  spec.add_development_dependency 'rspec', '~> 3.0'
+  spec.add_development_dependency 'rspec', '~> 3.3'
   spec.add_development_dependency 'rspec-its', '~> 1.0'
   spec.add_development_dependency 'rspec-collection_matchers', '~> 1.0'
   spec.add_development_dependency 'rake'
