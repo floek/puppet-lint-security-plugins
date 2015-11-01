@@ -6,6 +6,7 @@ are implemented, please feel free to contribute.
 ## Installation
 
     gem install puppet-lint-security-plugins
+    [![Gem Version](https://badge.fury.io/rb/puppet-lint-security-plugins@2x.png)](https://badge.fury.io/rb/puppet-lint-security-plugins)
 
 ## Testing your manifests
 
