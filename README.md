@@ -26,7 +26,6 @@ At the moment, the following tests have been implemented:
  * Should not pin packages to specific version
  * Must not store plaintext passwords in the manifest
  * Must not use password variables in exec
- * Should use range markers (\A,\z,^,$) in regular expressions
  * Must not use class or defined\_type parameters in `exec`
  * Should not use `tidy`with `age` and/or `size` parameter
  * Should not use `tidy` with `match` equals to `*`
