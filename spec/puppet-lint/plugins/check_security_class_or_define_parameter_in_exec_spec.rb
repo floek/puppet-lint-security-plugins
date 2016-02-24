@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'security_class_or_define_parameter_in_exec' do
-  let(:msg) { 'Class or definded_type parameter in exec used (security!)' }
+  let(:msg) { 'Class or defined_type parameter in exec used (security!)' }
 
   context 'with fix disabled' do
     context 'code having variables in execs' do
