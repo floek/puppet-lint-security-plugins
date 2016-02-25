@@ -7,11 +7,11 @@ PuppetLint.new_check(:security_class_or_define_parameter_in_exec) do
     check_resource_index(
       :resource_type => 'exec',
       :severity => :error,
-      :message => 'Class or definded_type parameter in exec used (security!)'
+      :message => 'Class or defined_type parameter in exec used (security!)'
     ) do |rule|
 
       class_definitions=class_indexes.find_all do |cd|
-        resource_in_class_or_define?(rule,cd) 
+        resource_in_class_or_define?(rule,cd)
       end
 
       defined_types=defined_type_indexes.find_all do |dt|
