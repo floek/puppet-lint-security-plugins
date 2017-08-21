@@ -15,7 +15,7 @@ tidy { '/usr/local':
       end
 
       it 'should create a warning' do
-        expect(problems).to contain_warning(msg).on_line(2).in_column(21)
+        expect(problems).to contain_warning(msg).on_line(2).in_column(20)
       end
     end
 

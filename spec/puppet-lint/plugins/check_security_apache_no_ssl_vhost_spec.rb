@@ -16,7 +16,7 @@ apache::vhost { 'fourth.example.com':
       end
 
       it 'should create a warning' do
-        expect(problems).to contain_warning(msg).on_line(2).in_column(38)
+        expect(problems).to contain_warning(msg).on_line(2).in_column(37)
       end
     end
 
