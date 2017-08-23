@@ -23,7 +23,7 @@ user {'myroot':
       end
 
       it 'should create a error' do
-        expect(problems).to contain_error(msg).on_line(3).in_column(16)
+        expect(problems).to contain_error(msg).on_line(3).in_column(15)
       end
     end
 

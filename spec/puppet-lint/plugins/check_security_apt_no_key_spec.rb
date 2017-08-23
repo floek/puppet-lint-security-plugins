@@ -5,7 +5,8 @@ describe 'security_apt_no_key' do
 
   context 'with fix disabled' do
     context 'code having no key parameter in apt' do
-      let(:code) { "apt::source { 'puppetlabs':
+      let(:code) { "
+apt::source { 'puppetlabs':
   location => 'http://apt.puppetlabs.com',
   repos    => 'main',
 }
@@ -16,7 +17,7 @@ describe 'security_apt_no_key' do
       end
 
       it 'should create a error' do
-        expect(problems).to contain_error(msg).on_line(1).in_column(28)
+        expect(problems).to contain_error(msg).on_line(2).in_column(27)
       end
     end
 

@@ -2,7 +2,7 @@
 class PuppetLint::CheckPlugin
 
   # This types represent valid values for variables and parameters
-  VALID_CONTENT_TOKENS=[:NAME,:SSTRING,:STRING,:NUMBER,:TRUE,:FALSE,:DQPRE,:DQMID,:DQPOST,:VARIABLE]
+  VALID_CONTENT_TOKENS=[:NAME,:FUNCTION_NAME,:SSTRING,:STRING,:NUMBER,:TRUE,:FALSE,:DQPRE,:DQMID,:DQPOST,:VARIABLE]
 
   # Checks if given resource is defined in given class or define
   #
@@ -120,7 +120,7 @@ class PuppetLint::CheckPlugin
   def get_argument_token_for_function(tokens,function)
     lparen=tokens.find do |token|
       token.type == :LPAREN and
-        token.prev_code_token.type == :NAME and
+        token.prev_code_token.type == :FUNCTION_NAME and
         token.prev_code_token.value == function
     end
 
@@ -159,7 +159,7 @@ class PuppetLint::CheckPlugin
       t = block_starter.next_token
 
       until [:SEMIC,:RBRACE].include? t.type
-        token_array << t unless t.type == :COLON
+        token_array << t
         t = t.next_token
       end
 

@@ -24,7 +24,7 @@ apt::source {
       end
 
       it 'should create a error' do
-        expect(problems).to contain_error(msg).on_line(6).in_column(16)
+        expect(problems).to contain_error(msg).on_line(6).in_column(15)
       end
     end
 
