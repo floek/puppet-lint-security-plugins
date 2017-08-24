@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name        = 'puppet-lint-security-plugins'
-  spec.version     = '0.1.7'
+  spec.version     = '0.2.0'
   spec.homepage    = 'https://github.com/floek/puppet-lint-security-plugins'
   spec.license     = 'MIT'
   spec.author      = 'Florian Freund'
